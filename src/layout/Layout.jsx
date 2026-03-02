@@ -11,7 +11,7 @@ export default function Layout() {
 
     return (
         <div className="flex flex-col min-h-screen bg-neutral-50">
-            <main className="flex-grow flex items-center justify-center p-4 md:p-8">
+            <main className="flex-grow flex items-center justify-center px-4 py-3 md:px-8 focus:outline-none">
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={pathname}

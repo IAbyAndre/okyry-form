@@ -73,12 +73,12 @@ export default function InscripcionPage() {
     }
 
     return (
-        <div className="pb-32 pt-20">
+        <div className="py-3">
             <div className="mb-20">
                 <motion.h1
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
-                    className="text-[3.5rem] md:text-[8rem] font-black text-neutral-900 mb-8 leading-[0.9] tracking-tighter"
+                    className="text-[20vw] md:text-[8rem] font-black text-neutral-900 mb-8 leading-[0.9] tracking-tighter"
                 >
                     Únete al <br />
                     <span className="text-blue-600">equipo</span> de <br />
