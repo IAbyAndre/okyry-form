@@ -318,13 +318,13 @@ export default function InscripcionPage() {
                 </section>
 
                 {/* Section 6: Documentación */}
-                <section className="form-block bg-neutral-900 text-white border-neutral-800">
+                <section className="form-block">
                     <h2 className="text-xl font-bold mb-6">6. Documentación</h2>
-                    <div className="bg-white/10 rounded-2xl p-6 mb-8">
-                        <p className="font-medium mb-4 text-blue-300 flex items-center gap-2">
+                    <div className="bg-white rounded-2xl p-6 mb-8 border border-neutral-200/50">
+                        <p className="font-bold mb-4 text-blue-600 flex items-center gap-2 uppercase tracking-widest text-xs">
                             <FileText size={16} /> Documentos requeridos (si eres seleccionado)
                         </p>
-                        <ul className="space-y-3 text-sm text-neutral-300">
+                        <ul className="space-y-3 text-sm text-neutral-600 font-medium">
                             <li className="flex items-center gap-3">
                                 <ChevronRight size={14} className="text-blue-500" /> DNI o Pasaporte vigente
                             </li>
@@ -342,9 +342,9 @@ export default function InscripcionPage() {
 
                     <label className="flex items-start gap-4 cursor-pointer group">
                         <div className="pt-1">
-                            <input type="checkbox" name="acepta_documentación_posterior" required className="w-5 h-5 rounded border-white/20 bg-white/10 text-blue-500 focus:ring-blue-500" />
+                            <input type="checkbox" name="acepta_documentación_posterior" required className="w-5 h-5 rounded border-neutral-300 bg-white text-blue-600 focus:ring-blue-600" />
                         </div>
-                        <span className="text-sm text-neutral-300 leading-relaxed group-hover:text-white transition-colors">
+                        <span className="text-sm text-neutral-600 leading-relaxed group-hover:text-neutral-900 transition-colors font-medium">
                             Estoy de acuerdo y confirmo que toda la información proporcionada es verídica. Entiendo que la falsificación de datos conlleva la descalificación inmediata.
                         </span>
                     </label>

@@ -4,7 +4,7 @@
 
 @layer components {
   .form-block {
-    @apply bg-white rounded-[2rem] p-10 border border-neutral-100 shadow-sm transition-all hover:shadow-xl hover:shadow-neutral-200/50;
+    @apply bg-[#e0e0e0] rounded-[2rem] p-4 border border-neutral-100 shadow-sm transition-all hover:shadow-xl hover:shadow-neutral-200/50;
   }
 
   .field {
