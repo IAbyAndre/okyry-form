@@ -4,25 +4,31 @@
 
 @layer components {
   .form-block {
-    @apply bg-white rounded-3xl p-8 border border-neutral-100;
+    @apply bg-white rounded-[2rem] p-10 border border-neutral-100 shadow-sm transition-all hover:shadow-xl hover:shadow-neutral-200/50;
   }
-  
+
+  .field {
+    @apply flex flex-col gap-2;
+  }
+
   .field label {
-    @apply text-sm font-semibold text-neutral-600 mb-2;
+    @apply text-sm font-bold text-neutral-400 uppercase tracking-widest mb-1;
   }
-  
-  .field input, .field select, .field textarea {
-    @apply rounded-xl border-none bg-neutral-100 p-4 focus:ring-2 focus:ring-blue-500 outline-none transition-all;
+
+  .field input,
+  .field select,
+  .field textarea {
+    @apply rounded-2xl border-none bg-neutral-100 p-5 focus:ring-2 focus:ring-blue-500 outline-none transition-all text-neutral-900 placeholder:text-neutral-400 font-medium;
   }
-  
+
   .btn {
-    @apply px-6 py-3 rounded-2xl font-semibold transition-all flex items-center gap-2;
+    @apply px-8 py-4 rounded-2xl font-bold transition-all flex items-center gap-2 active:scale-95;
   }
-  
+
   .btn-primary {
-    @apply bg-blue-600 text-white hover:bg-blue-700 shadow-lg shadow-blue-200;
+    @apply bg-blue-600 text-white hover:bg-blue-700 shadow-xl shadow-blue-200;
   }
-  
+
   .btn-ghost {
     @apply bg-neutral-100 text-neutral-600 hover:bg-neutral-200;
   }
@@ -30,4 +36,17 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  @apply bg-neutral-50 text-neutral-900 antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-neutral-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neutral-300 rounded-full border-4 border-neutral-100;
 }
